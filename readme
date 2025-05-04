@@ -1,0 +1,40 @@
+
+Task Manager API is a project to showcase API CRUD operations using Tasks entity. This project runs on node js and express. 
+
+Note: Data manupilation is made on a dummy set, and it resets everytime application restarts.
+
+
+API endpoints:
+--------------
+
+* GET api/v1/tasks : Retrieve all tasks
+
+* GET api/v1/tasks/:id : Retrieve a specific task by its ID. 
+
+* POST /tasks : Create a new task with the required fields (title, description, completed). Priority and creationDate flieds are not required fields, but it'll be created and allocated random values if not passed.
+(ID is auto assigned, it should not be passed in the body)
+
+* PUT /tasks/:id : Update an existing task by its ID (ID should not be passed in the body)
+
+* DELETE /tasks/:id: Delete a task by its ID.
+
+
+Validations:
+------------
+Checks are performed on title, description, completed fileds
+
+
+Dependencies:
+-------------
+Express
+
+
+Installation:
+-------------
+install the necessary pacakages 
+cmd: npm install
+
+To start the application and it runs on the port 3000
+cmd: node app.js
+
+Note: Port can be changed on the app.js
